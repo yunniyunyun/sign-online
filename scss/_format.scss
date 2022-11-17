@@ -1,0 +1,71 @@
+h1{
+    font-size: 24px;
+}
+// @media (max-width: $media-m){
+//     h1{
+//         font-size: 24px;
+//     }
+// }
+// @media (max-width: $media-s){
+//     h1{
+//         font-size: 20px;
+//     }
+// }
+
+h2{
+    font-size: 20px;
+}
+// @media (max-width: $media-m){
+//     h2{
+//         font-size: 44px;
+//     }
+// }
+// @media (max-width: $media-s){
+//     h2{
+//         font-size: 28px;
+//     }
+// }
+
+h3{
+    font-size: 16px;
+}
+// @media (max-width: $media-m){
+//     h3{
+//         font-size: 34px;
+//     }
+// }
+// @media (max-width: $media-s){
+//     h3{
+//         font-size: 24px;
+//     }
+// }
+
+h4{
+    font-size: 14px;
+}
+// @media (max-width: $media-m){
+//     h4{
+//         font-size: 26px;
+//     }
+// }
+// @media (max-width: $media-s){
+//     h4{
+//         font-size: 20px;
+//     }
+// }
+
+
+h5{
+    font-size: 12px;
+}
+
+h6{
+    font-size: 10px;
+}
+
+
+@media (max-width: $media-md){
+    .display-lg{
+        display: none;
+    }
+}
