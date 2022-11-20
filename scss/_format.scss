@@ -1,4 +1,4 @@
-h1{
+h1, .fz-24{
     font-size: 24px;
 }
 // @media (max-width: $media-m){
@@ -68,4 +68,26 @@ h6{
     .display-lg{
         display: none;
     }
+}
+
+.color-primary{
+    color: $primary-color;
+}
+.color-secondary{
+    color: $secondary-color;
+}
+.color-dark{
+    color: $dark-color;
+}
+.color-dark-grey{
+    color: $dark-grey-color;
+}
+.color-E2E1DD{
+    color: #E2E1DD;
+}
+
+
+
+.bg-light-main{
+    background: $light-main-color;
 }

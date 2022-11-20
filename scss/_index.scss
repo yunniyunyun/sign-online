@@ -1,0 +1,119 @@
+.index-header{
+    height: 100vh;
+    position: relative;
+    background: $light-grey-color;
+    z-index: 2;
+}
+.banner-main{
+    width: 1135px;
+    height: 100vh;
+    position: absolute;
+    background-image:url("../images/bg/banner_主要物件\ 1.png");
+    background-repeat: no-repeat;
+    background-position: left 77px;
+    background-size:100%;
+    z-index: -2;
+    top: 0;
+}
+@media (max-width: $media-md){
+    .banner-main{
+        background-position: -220px 32px;
+    }
+}
+.banner-red-left{
+    width: 224px;
+    height: 100vh;
+    position: absolute;
+    background-image:url("../images/bg/banner_左側結晶\ 2.png");
+    background-repeat: no-repeat;
+    background-position: right calc(409px + 77px);
+    background-size:100%;
+    z-index: -1;
+    top: 0;
+    left: 57px;
+}
+.banner-red-right{
+    width: 116px;
+    height: 256px;
+    position: absolute;
+    background-image:url("../images/bg/banner_右側結晶\ 1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:100%;
+    z-index: -1;
+    top: calc((100vh - 256px)/2);
+    right: 57px;
+}
+.banner-blue{
+    height: 100vh;
+    position: relative;
+    background-image:url("../images/bg/banner_藍色板塊\ 1.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size:contain;
+    z-index: -4;
+}
+
+.banner-shadow{
+    width: 504px;
+    height: 268px;
+    position: absolute;
+    background-image:url("../images/bg/banner_陰影\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size:100%;
+    z-index: -3;
+    bottom: 0 ;
+    left: calc(100vw - 1551px + 159px);
+}
+@media (max-width: $media-md){
+    .banner-shadow{
+        left: calc(159px);
+    }
+}
+
+.logo{
+    background-image:url("../images/logo/LOGO\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+    z-index: 1;
+}
+.index-header .logo{
+    width: 468px;
+    height: 117px;
+    position: absolute;
+    top: calc(219px + 60px);
+    left: 1090px;
+}
+@media (max-width: $media-md){
+    .index-header .logo{
+        left: 856px;
+    }
+}
+.index-header h1{
+    position: absolute;
+    width: 469px;
+    height: 30px;
+    left: 1098px;
+    top: 419px;
+    text-align: justify;
+    letter-spacing: 0.95em;
+    z-index: -1;
+}
+@media (max-width: $media-md){
+    .index-header h1{
+        left: 856px;
+    }
+}
+.index-header .btn-1{
+    position: absolute;
+    left: 1090px;
+    top: 542px;
+    z-index: 5; 
+}
+@media (max-width: $media-md){
+    .index-header .btn-1{
+        left: 856px;
+    }
+}

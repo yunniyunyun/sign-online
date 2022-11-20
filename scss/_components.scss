@@ -1,0 +1,44 @@
+.header{
+    background: $light-main-color;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.btn-1{
+    padding: 31px 123px;
+    font-size: 24px;
+    background: $light-main-color;
+    color: $dark-color;
+    text-align: center;
+    letter-spacing: 1em;
+    z-index: 10;
+    &:hover{
+        color: $light-main-color;
+        background: $primary-color;
+    }
+}
+.btn-2{
+    padding: 15px;
+    background: $white-color;
+    box-shadow: 0px 4px 4px $mid-grey-color;
+    border-radius: 35px;
+    color: $secondary-color;
+    cursor: pointer;
+    &:hover{
+        color: $primary-color;
+    }
+}
+.btn-3{ 
+    padding: 15px;
+    background: $secondary-color;
+    box-shadow: 0px 4px 4px #EEEDE8;
+    border-radius: 35px;
+    color: $white-color;
+    cursor: pointer;
+    &:hover{
+        background: $primary-color;
+    }
+    &:disabled{
+        background: $mid-grey-color;
+        cursor: default; 
+    }
+}
