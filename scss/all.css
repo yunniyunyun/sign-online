@@ -253,6 +253,8 @@ h6 {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
   height: 100px;
   background: #FFFAF4;
@@ -294,21 +296,36 @@ footer .container {
   position: relative;
 }
 
-.step svg {
+.circle-white {
+  height: 22px;
+  width: 22px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
   position: absolute;
-  width: 44px;
-  height: 44px;
   top: 32px;
-  left: 12px;
-  fill: #FFFFFF;
+  left: 22px;
+  z-index: 3;
 }
 
-.ellipse-white {
-  fill: #FFFFFF;
+.circle-primary {
+  height: 16px;
+  width: 16px;
+  background-color: #F9B471;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  z-index: 3;
 }
 
-.ellipse-now {
-  fill: #F9B471;
+.rectangle {
+  height: 9px;
+  width: 362px;
+  background-color: #FFFFFF;
+  z-index: 2;
+  position: absolute;
+  top: 39px;
+  left: 33px;
 }
 
 .index-header {
@@ -519,5 +536,16 @@ footer .container {
   background-repeat: no-repeat, no-repeat;
   background-position: left, bottom 18px left 18px;
   background-size: 90px 126px, 108px 45px;
+}
+
+input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 /*# sourceMappingURL=all.css.map */

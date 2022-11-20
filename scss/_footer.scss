@@ -1,4 +1,6 @@
 footer{
+    position: fixed;
+    bottom: 0;
     width: 100%;
     height: 100px;
     background: $light-main-color;
@@ -25,19 +27,34 @@ footer .container{
         margin-right: 107px;
         position: relative;
     }
-    svg{
-        position: absolute;
-        width: 44px;
-        height: 44px;
-        top: 32px;
-        left: 12px;
-        fill: $white-color;
-    }
 }
 
-.ellipse-white{
-    fill: $white-color;
+.circle-white {
+    height: 22px;
+    width: 22px;
+    background-color: $white-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 32px;
+    left: 22px;
+    z-index: 3;
 }
-.ellipse-now{
-    fill: $primary-color;
+  .circle-primary {
+    height: 16px;
+    width: 16px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    z-index: 3;
 }
+.rectangle {
+    height: 9px;
+    width: 362px;
+    background-color: $white-color;
+    z-index: 2;
+    position: absolute;
+    top: 39px;
+    left: 33px;
+  }

@@ -54,3 +54,13 @@
     background-position: left, bottom 18px left 18px;
     background-size:90px 126px, 108px 45px;
 }
+input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}

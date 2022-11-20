@@ -25,12 +25,16 @@
             <li><a href="#">上傳新文件</a></li>
             <li><a href="#">選擇已上傳文件</a></li>
         </ul>
-        <div class="upload">
-            <ul class="upload-file color-dark-grey fz-24">
-                <li>點擊此處上傳 或 直接拖曳檔案</li>
-                <li class="ic-upload"></li>
-                <li>(限10MB以下PDF檔)</li>
-            </ul>
+        <div class="upload"> 
+            <canvas id="canvas"></canvas>
+            <label for="select">
+                <input type="file" class="select" id="select" accept="application/pdf" />
+                <ul class="upload-file color-dark-grey fz-24">
+                    <li>點擊此處上傳 或 直接拖曳檔案</li>
+                    <li class="ic-upload"></li>
+                    <li>(限10MB以下PDF檔)</li>
+                </ul>
+            </label>
         </div>
     </div>
     <footer>
@@ -38,28 +42,18 @@
             <ul class="step">
                 <li class="color-primary">
                     <h3>上傳文件</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                        <ellipse cx="22" cy="22" rx="22" ry="22" class="ellipse-white"/>
-                        <ellipse cx="22" cy="22" rx="16" ry="16" class="ellipse-now"/>
-                    </svg>
+                    <div class="circle-white"></div>
+                    <div class="circle-primary"></div>
+                    <div class="rectangle"></div>
                 </li>
                 <li class="color-dark-grey">
                     <h3>進行簽署</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                        <ellipse cx="22" cy="22" rx="22" ry="22" class="ellipse-white"/>
-                    </svg>
+                    <div class="circle-white"></div>
                 </li>
                 <li class="color-dark-grey">
                     <h3>下載文件</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                        <ellipse cx="22" cy="22" rx="22" ry="22" class="ellipse-white"/>
-                    </svg>
+                    <div class="circle-white"></div>
                 </li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
             </ul>
             <ul class="footer-btn">
                 <li><button class="btn-2">取消</button></li>
@@ -67,5 +61,9 @@
             </ul>
         </div>
     </footer>
+    <!-- 引入pdf.js的套件 -->
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="./js/pdf.js"></script>
+    <script src="./js/all.js"></script>
 </body>
 </html>
